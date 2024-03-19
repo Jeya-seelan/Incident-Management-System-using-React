@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Scrollbar design */
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  width: 5px;
+  box-shadow: inset 1px 1px 3px #6666;
+}
+::-webkit-scrollbar-thumb{
+  width: 5px;
+  background: #065cb8; 
+  border-radius: 5px;
+  transition: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #4b91db; 
+}
+
+/* Navigation Bar */
+.Navbar{
+  position: sticky;
+  top: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 2px 2px 2px 1px #9999;
+  z-index: 100;
+}
+.Navbar .nav{
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.Navbar .nav a{
+  padding: 4px 0px;
+  color: #065cb8;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background: white;
+}
+.Navbar .nav a.active{
+  border-bottom: 3px solid #065cb8;
+}
+.Navbar .Logo{
+  text-align: center;
+  padding: 0px 25px;
+  color: #333;
+}
+/* Logout button */
+.Navbar .nav button{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #6666;
+  color: #fff;
+  background: #065cb8;
+}
+/* Homepage */
+.Homepage{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: url('./images/BackGround.jpg') no-repeat;
+  background-size: 100% 100%;
+
+}
+.Homepage .container{
+  width: 400px;
+  height: 300px;
+  padding: 20px 30px;
+  margin-right: 50px;
+  background: rgba(255,255,255,.3);
+  border-radius: 10px;
+  border: 1px solid #ffff;
+  backdrop-filter: blur(20px);
+}
+
+/* Userpage */
+.Userpage{
+  position: relative;
+  background: #fff;
+  display: flex;
+  padding: 50px 40px;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #333;
+}
+.Userpage .post{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid #6666;
+  box-shadow: 2px 2px 4px #6666;
+  border-radius: 10px;
+}
+.Userpage .post img{
+  width: 100%;
+  border-radius: 5px;
+}
+.Userpage .post .profile{
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+}
+.Userpage .post .profile img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #6666;
+}
+.Userpage .post .profile .info{
+  text-align: left;
+  width: 85%;
+}
+.Userpage .post .profile .info h1{
+  font-size: 15px;
+  padding: 0px 5px;
+}
+.Userpage .post .profile .info p{
+  position: relative;
+  bottom: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+/* Login Page */
+.Login{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+.Login .container{
+  position: relative;
+  display: flex;
+  width: 400px;
+  padding: 10px 30px;
+  height: 400px;
+  color: #111;
+  text-align: left;
+  border: 1px solid #3333;
+  box-shadow: 2px 2px 3px #3333;
+  border-radius: 10px;
+  background: #fff;
+}
+.Login .container form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.Login .container form h1{
+  text-transform: uppercase;
+  color: #065cb8;
+}
+.Login .container input{
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 5px;
+}
+.Login .container button{
+  width: 280px;
+  padding: 10px 15px;
+  border: none;
+  background: #065cb8;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: .4s;
+  box-shadow: 1px 1px 2px #999;
+}
+.Login .container button:hover{
+  opacity: .8;
+  box-shadow: 1px 1px 3px #999;
+}
+
+
+/* Signup Page */
+.Signup{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 800px;
+}
+.Signup .container{
+  position: relative;
+  top: 50px;
+  display: flex;
+  width: 400px;
+  padding: 10px 30px;
+  height: 600px;
+  color: #111;
+  text-align: left;
+  border: 1px solid #3333;
+  box-shadow: 2px 2px 3px #3333;
+  border-radius: 10px;
+  background: #fff;
+}
+.Signup .container form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.Signup .container form .input-box{
+  display: flex;
+  flex-direction: column;
+}
+.Signup .container form h1{
+  text-transform: uppercase;
+  color: #065cb8;
+}
+.Signup .container input{
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 5px;
+}
+.Signup .container button{
+  width: 280px;
+  padding: 10px 15px;
+  border: none;
+  background: #065cb8;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: .4s;
+  box-shadow: 1px 1px 2px #999;
+}
+.Signup .container button:hover{
+  opacity: .8;
+  box-shadow: 1px 1px 3px #999;
+}
+
+/* Admin page */
+.AdminPage{
+  width: calc(100% -20px);
+  height: fit-content;
+  padding: 30px 20px;
+}
+.AdminPage .Container{
+  background: #fff;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+.AdminPage .Container form{
+  position: relative;
+  top: 50px;
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #6666;
+  border: 1px solid #6666;
+}
+.AdminPage .Container form input{
+  width: 200px;
+  padding: 10px 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .4s;
+}
+.AdminPage .Container form .input-box{
+  display: flex;
+  flex-direction: column;
+}
+.AdminPage .Container form span{
+  position: relative;
+  width: fit-content;
+  bottom: 50px;
+  left: 10px;
+  background: #fff;
+  padding: 2px 10px;
+  font-size: 10px;
+  border-radius: 10px;
+  transition: .4s;
+}
+.AdminPage .Container form input:focus ~span{
+  color: #065cb8;
+}
+
+.AdminPage .Container form input:focus{
+  border: 1px solid #065cb8;
+}
+.AdminPage .Container form button{
+  border: none;
+  background: #065cb8;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #6666;
+}
+.AdminPage .Container table{
+  position: relative;
+  top: 100px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+.AdminPage .Container table th{
+  padding: 10px 20px;
+  background: #065cb8;
+  border: 1px solid #aaa;
+  color: #fff;
+}
+.AdminPage .Container table td{
+  border: 1px solid #555;
+  padding: 10px 20px;
+}
+.AdminPage .Container table td .btns{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.AdminPage .Container table td .btns button{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.AdminPage .Container table td .btns button:nth-child(1){
+  background: #3d9212;
+}
+.AdminPage .Container table td .btns button:nth-child(2){
+  background: #ff1100;
+}
+
+.AdminPage .popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: .4s;
+}
+.AdminPage .popup form{
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #6666;
+}
+.AdminPage .popup form h2{
+  color: #065cb8;
+}
+.AdminPage .popup form input{
+  width: 200px;
+  padding: 10px 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .4s;
+}
+.AdminPage .popup form .input-box{
+  display: flex;
+  flex-direction: column;
+}
+.AdminPage .popup form span{
+  position: relative;
+  width: fit-content;
+  bottom: 50px;
+  left: 10px;
+  background: #fff;
+  padding: 2px 10px;
+  font-size: 10px;
+  border-radius: 10px;
+  transition: .4s;
+}
+.AdminPage .popup form input:focus ~span{
+  color: #065cb8;
+}
+
+.AdminPage .popup form input:focus{
+  border: 1px solid #065cb8;
+}
+.AdminPage .popup form .btns button{
+  border: none;
+  background: #065cb8;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #6666;
+}
+.AdminPage .popup form .btns{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media screen and (min-width:800px){
+  .Userpage .post{
+    width: 400px;
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "101f",
+      "username": "Adam",
+      "email": "adam@gmail.com",
+      "password": "adam123@"
+    },
+    {
+      "id": "abf6",
+      "username": "Jeyaseelan",
+      "email": "jey12@gmail.com",
+      "password": "jey123@"
+    },
+    {
+      "id": "78c8",
+      "username": "admin",
+      "email": "admin@procare.org",
+      "password": "procare123@"
+    }
+  ],
+  "posts": [
+    {
+      "id": "101f",
+      "title": "Server Outage",
+      "caption": "Critical server outage affecting production services",
+      "image": "https://datafloq.com/wp-content/uploads/2021/12/blog_pictures2FServer-Outage.jpg"
+    },
+    {
+      "id": "abf6",
+      "title": "Network Downtime",
+      "caption": "Complete loss of network connectivity in datacenter",
+      "image": "https://penncomp.com/wp-content/uploads/2021/11/network-downtime.jpg"
+    },
+    {
+      "id": "2002",
+      "title": "Security Breach",
+      "caption": "This is the content",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.gWb4B0HRE9T3pt987hvRDAHaEK&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "8970",
+      "title": "Job alert",
+      "caption": "Here  is the content.",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.Plwzqggo4Mrz1WW5NId-GgHaE8&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "2435",
+      "title": "Summer camp",
+      "caption": "We are providing summer camp for all the members and all are have the opportunity in free.",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.EOLAQkwv0n4pTUsLzOeuZQHaE8&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "6952",
+      "title": "Block Chain Technology",
+      "caption": "Blockchain is a decentralized and immutable ledger technology. It securely records transactions across multiple computers in a distributed network, ensuring transparency and preventing tampering.",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.PpMgnPj4ihf01OWpaQYtYQHaDr&pid=Api&P=0&h=180"
+    }
+  ]
+}
